@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 
 # Load model and encoder
-model = joblib.load("xgbmodel.pkl")
+model = joblib.load("RFmodel.pkl")
 ohe = joblib.load("ohe.pkl")
 
 app = FastAPI(title="API Bot Detection Model")
@@ -23,7 +23,6 @@ class RequestData(BaseModel):
     url_length: int
     query_param_count: int
     payload_size: int
-    is_proxy: int
     distinct_endpoints_accessed: int
     login_attempts: int
     request_pattern_entropy: float

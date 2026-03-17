@@ -98,8 +98,6 @@ query_param_count – Number of query parameters
 
 payload_size – Request payload size
 
-is_proxy – Boolean if request is via proxy
-
 distinct_endpoints_accessed – Number of endpoints accessed
 
 login_attempts – Number of login attempts
@@ -110,15 +108,15 @@ request_pattern_entropy – Entropy of request pattern
 
 (Replace with your metrics)
 
-Accuracy: 0.98
+Accuracy: 0.96(96%)
 
 Precision: 1.0
 
-Recall: 0.90
+Recall: 0.84
 
-F1-score: 0.95
+F1-score: 0.91
 
-Algorithm Used: Supervised classifier (XGBoost)
+Algorithm Used: Supervised classifier (RandomForest)
 
 🎯 Key Features of the App
 
@@ -132,7 +130,7 @@ Algorithm Used: Supervised classifier (XGBoost)
 
 🔮 Future Improvements
 
-Deploy on cloud (AWS EC2 / Docker / EKS)
+Deploy on cloud ( Docker / Streamlit)
 
 Integrate with API Gateway for automated blocking
 
